@@ -33,10 +33,15 @@ This is a Streamlit-based web application that allows you to ask questions about
 ## 🔧 Install dependencies
 ```pip install -r requirements.txt
 ---
+## How It Works
+User pastes a YouTube video URL
 
-### 1. Clone the repo:
-```bash
-git clone https://github.com/your-username/youtube-qa-gemini-app.git
-cd youtube-qa-gemini-app
+Transcript is fetched and split into overlapping chunks
 
----
+Chunks are embedded and stored in a FAISS vector DB
+
+User's question is matched to the most relevant chunks
+
+A custom prompt is passed to Gemini
+
+Gemini responds based on transcript context
