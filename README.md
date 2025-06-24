@@ -30,18 +30,12 @@ This is a Streamlit-based web application that allows you to ask questions about
 
 ---
 
-## 🔧 Install dependencies
-```pip install -r requirements.txt
+## 🔧 How It Works
+```
 ---
-## How It Works
-User pastes a YouTube video URL
-
-Transcript is fetched and split into overlapping chunks
-
-Chunks are embedded and stored in a FAISS vector DB
-
-User's question is matched to the most relevant chunks
-
-A custom prompt is passed to Gemini
-
-Gemini responds based on transcript context
+1)User pastes a YouTube video URL
+2)Transcript is fetched and split into overlapping chunks
+3)Chunks are embedded and stored in a FAISS vector DB
+4)User's question is matched to the most relevant chunks
+5)A custom prompt is passed to Gemini
+6)Gemini responds based on transcript context
